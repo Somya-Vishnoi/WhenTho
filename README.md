@@ -127,7 +127,27 @@ Open **[http://localhost:5173](http://localhost:5173)** in your browser.
 
 ---
 
-## 🌐 Deploy to Vercel
+## 🌐 Deploy to Render (Backend API)
+
+WhenTho includes an automated Infrastructure-as-Code blueprint [`render.yaml`](file:///Users/somya/Desktop/WhenTho/render.yaml):
+
+### 1-Click Render Deployment:
+1. Go to your [Render Dashboard](https://dashboard.render.com).
+2. Click **New +** $\rightarrow$ **Web Service** (or **Blueprint**).
+3. Connect your GitHub repository `WhenTho`.
+4. Configure the Web Service:
+   - **Root Directory:** `backend`
+   - **Environment:** `Python 3`
+   - **Build Command:** `pip install -r requirements.txt`
+   - **Start Command:** `uvicorn main:app --host 0.0.0.0 --port $PORT`
+5. Under **Environment Variables**, add:
+   - `GEMINI_API_KEY`: *(your Google AI Studio API key)*
+6. Click **Deploy Web Service**.
+7. Copy your assigned Render service URL (e.g. `https://whentho-api.onrender.com`).
+
+---
+
+## 🌐 Deploy to Vercel (Frontend UI)
 
 WhenTho is configured for instantaneous 1-click deployment on **Vercel**:
 
@@ -140,12 +160,9 @@ WhenTho is configured for instantaneous 1-click deployment on **Vercel**:
    - **SPA Routing Rewrite:** Enabled (routes all paths to `/index.html`)
 3. Set the Environment Variable in Vercel Project Settings:
    ```env
-   VITE_API_URL=https://your-whentho-backend.railway.app
+   VITE_API_URL=https://whentho-api.onrender.com
    ```
 4. Click **Deploy**.
-
-### Option 2: Frontend Directory Import
-- If setting **Root Directory** as `frontend` in Vercel settings, [`frontend/vercel.json`](file:///Users/somya/Desktop/WhenTho/frontend/vercel.json) ensures zero configuration is needed.
 
 ---
 

@@ -261,7 +261,58 @@
     "client_late_payment_rate": 0.05,
     "client_total_invoices_before_this": 0,
     "amount_vs_client_avg": 1.74,
-    "is_repeat_client": false
+    "is_repeat_client": false,
+    "recovery_plan": {
+      "strategy_name": "Escalated Multi-Channel Revenue Recovery",
+      "primary_channel": "Direct Formal Follow-up + Razorpay Instant UPI Link",
+      "cadence": "T+0 Urgent Notice -> T+2 Voice Check-in -> T+5 Finance Director Escalation",
+      "urgency": "high",
+      "promise_window_days": 2,
+      "promise_target_date": "2026-09-07",
+      "root_causes": [
+        {
+          "category": "DELINQUENCY_CRITICAL",
+          "title": "Severe Payment Aging & Cash Leakage",
+          "detail": "Invoice is 42 days past due. Historical data shows probability of natural settlement without intervention drops by 68% after Day 15.",
+          "severity": "high"
+        },
+        {
+          "category": "APPROVAL_FRICTION",
+          "title": "Anomalous Amount / Executive Approval Gate",
+          "detail": "Invoice is 1.7x higher than client's historical average. Enterprise spend policy often requires dual sign-off.",
+          "severity": "high"
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "action": "Dispatch Razorpay Smart Payment Link",
+          "status": "ready",
+          "target_date": "2026-09-05",
+          "channel": "Email / WhatsApp Gateway",
+          "description": "Auto-inject UPI QR and 1-click Razorpay card/netbanking settlement link."
+        },
+        {
+          "step": 2,
+          "action": "Capture Promise-to-Pay (PTP) Commitment",
+          "status": "pending",
+          "target_date": "2026-09-07",
+          "channel": "WhenTho Recovery Tracker",
+          "description": "Lock in client payment confirmation window by 07 Sep 2026."
+        },
+        {
+          "step": 3,
+          "action": "Mandate Retry & Escalation Sequencer",
+          "status": "queued",
+          "target_date": "2026-09-10",
+          "channel": "Multi-Channel Escalation",
+          "description": "If PTP is breached, automatically escalate to Accounts Payable leadership."
+        }
+      ],
+      "projected_recovery_amount": 180800.0,
+      "projected_recovery_likelihood": 83.0
+    },
+    "hinglish_voice_script": "Namaste Kavita Designs team, main WhenTho accounts department se baat kar raha hoon. Aapka \u20b9180,800.00 ka invoice abhi 42 din overdue chal raha hai. Kya aap kindly confirm kar sakte hain ki payment aaj process ho rahi hai? Maine aapko Razorpay instant UPI link WhatsApp aur email par share kar diya hai, jisse aap 1-click me direct clear kar sakte hain. Please let me know if there are any billing questions."
   },
   {
     "invoice_id": "INV-10005",
@@ -400,7 +451,52 @@
     "client_late_payment_rate": 0.167,
     "client_total_invoices_before_this": 0,
     "amount_vs_client_avg": 0.55,
-    "is_repeat_client": false
+    "is_repeat_client": false,
+    "recovery_plan": {
+      "strategy_name": "Escalated Multi-Channel Revenue Recovery",
+      "primary_channel": "Direct Formal Follow-up + Razorpay Instant UPI Link",
+      "cadence": "T+0 Urgent Notice -> T+2 Voice Check-in -> T+5 Finance Director Escalation",
+      "urgency": "high",
+      "promise_window_days": 2,
+      "promise_target_date": "2026-09-07",
+      "root_causes": [
+        {
+          "category": "DELINQUENCY_CRITICAL",
+          "title": "Severe Payment Aging & Cash Leakage",
+          "detail": "Invoice is 18 days past due. Historical data shows probability of natural settlement without intervention drops by 68% after Day 15.",
+          "severity": "high"
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "action": "Dispatch Razorpay Smart Payment Link",
+          "status": "ready",
+          "target_date": "2026-09-05",
+          "channel": "Email / WhatsApp Gateway",
+          "description": "Auto-inject UPI QR and 1-click Razorpay card/netbanking settlement link."
+        },
+        {
+          "step": 2,
+          "action": "Capture Promise-to-Pay (PTP) Commitment",
+          "status": "pending",
+          "target_date": "2026-09-07",
+          "channel": "WhenTho Recovery Tracker",
+          "description": "Lock in client payment confirmation window by 07 Sep 2026."
+        },
+        {
+          "step": 3,
+          "action": "Mandate Retry & Escalation Sequencer",
+          "status": "queued",
+          "target_date": "2026-09-10",
+          "channel": "Multi-Channel Escalation",
+          "description": "If PTP is breached, automatically escalate to Accounts Payable leadership."
+        }
+      ],
+      "projected_recovery_amount": 61200.0,
+      "projected_recovery_likelihood": 97.2
+    },
+    "hinglish_voice_script": "Namaste Pulse Media Group team, main WhenTho accounts department se baat kar raha hoon. Aapka \u20b961,200.00 ka invoice abhi 18 din overdue chal raha hai. Kya aap kindly confirm kar sakte hain ki payment aaj process ho rahi hai? Maine aapko Razorpay instant UPI link WhatsApp aur email par share kar diya hai, jisse aap 1-click me direct clear kar sakte hain. Please let me know if there are any billing questions."
   },
   {
     "invoice_id": "INV-10013",
@@ -702,16 +798,65 @@
     "description": "B2B SaaS Go-To-Market Strategic Consulting",
     "client_industry": "Consulting",
     "client_avg_days_to_pay": 34.0,
-    "client_late_payment_rate": 0.4,
-    "client_total_invoices_before_this": 2,
+    "client_late_payment_rate": 0.6,
+    "client_total_invoices_before_this": 3,
     "amount_vs_client_avg": 1.05,
     "is_repeat_client": true,
-    "status": "unpaid",
+    "status": "paid",
     "payment_channel": "razorpay_invoicing",
     "dispatches": [],
     "promise_to_pay": null,
     "razorpay_payment_url": "https://rzp.io/i/whentho_inv-10029",
-    "razorpay_qr_code": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=whentho.merchant@razorpay&pn=WhenTho%20Invoice&am=52000.0&cu=INR"
+    "razorpay_qr_code": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=whentho.merchant@razorpay&pn=WhenTho%20Invoice&am=52000.0&cu=INR",
+    "recovery_plan": {
+      "strategy_name": "Automated Receivables Nudge & Payment Sequencer",
+      "primary_channel": "Polite AP Check-in + Instant Razorpay 1-Click Link",
+      "cadence": "T+0 Friendly Nudge -> T+3 Automated Payment Reminder with QR",
+      "urgency": "medium",
+      "promise_window_days": 5,
+      "promise_target_date": "2026-09-10",
+      "root_causes": [
+        {
+          "category": "TERMS_BREACH",
+          "title": "Payment Degradation Beyond Agreed Terms",
+          "detail": "Exceeded Net-30 cycle by 2 days. Likely stuck in client accounts payable processing batch.",
+          "severity": "medium"
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "action": "Dispatch Razorpay Smart Payment Link",
+          "status": "ready",
+          "target_date": "2026-09-05",
+          "channel": "Email / WhatsApp Gateway",
+          "description": "Auto-inject UPI QR and 1-click Razorpay card/netbanking settlement link."
+        },
+        {
+          "step": 2,
+          "action": "Capture Promise-to-Pay (PTP) Commitment",
+          "status": "pending",
+          "target_date": "2026-09-10",
+          "channel": "WhenTho Recovery Tracker",
+          "description": "Lock in client payment confirmation window by 10 Sep 2026."
+        },
+        {
+          "step": 3,
+          "action": "Mandate Retry & Escalation Sequencer",
+          "status": "queued",
+          "target_date": "2026-09-13",
+          "channel": "Multi-Channel Escalation",
+          "description": "If PTP is breached, automatically escalate to Accounts Payable leadership."
+        }
+      ],
+      "projected_recovery_amount": 52000.0,
+      "projected_recovery_likelihood": 86.0
+    },
+    "hinglish_voice_script": "Namaste Catalyst Growth Partners ji, WhenTho studio se call kar raha hoon. Aapka \u20b952,000.00 ka recent invoice due date ke paas hai. Bas ek quick check karna tha ki accounts team ke paas sabhi details and GST invoice received hai na? Aap direct Razorpay link se UPI ya Netbanking ke through bhi payment execute kar sakte hain. Thank you!",
+    "paid_at": "2026-09-05",
+    "settled_channel": "Razorpay UPI (FastCheckout)",
+    "predicted_status": "on_time",
+    "risk_level": "low"
   },
   {
     "invoice_id": "INV-10030",
@@ -827,5 +972,28 @@
     "promise_to_pay": null,
     "razorpay_payment_url": "https://rzp.io/i/whentho_inv-10034",
     "razorpay_qr_code": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=whentho.merchant@razorpay&pn=WhenTho%20Invoice&am=28000.0&cu=INR"
+  },
+  {
+    "invoice_id": "INV-10029",
+    "client_id": "CL-1003",
+    "client_name": "Kavita",
+    "client_email": "somyavishnoi32@gmail.com",
+    "invoice_amount": 560000.0,
+    "payment_terms_days": 15,
+    "invoice_date": "2026-09-06",
+    "days_since_invoice_sent": 0,
+    "status": "unpaid",
+    "payment_channel": "razorpay_invoicing",
+    "razorpay_payment_url": "https://rzp.io/i/whentho_inv-10029",
+    "razorpay_qr_code": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=whentho.merchant@razorpay&pn=WhenTho%20Invoice&am=560000.0&cu=INR",
+    "description": "consulting",
+    "client_industry": "Consulting",
+    "client_avg_days_to_pay": 17.1,
+    "client_late_payment_rate": 0.05,
+    "client_total_invoices_before_this": 40,
+    "amount_vs_client_avg": 4.96,
+    "is_repeat_client": true,
+    "dispatches": [],
+    "promise_to_pay": null
   }
 ]

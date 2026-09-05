@@ -310,5 +310,18 @@
     "days_since_sent": 81,
     "payment_terms": 45,
     "settled_channel": "Razorpay UPI (FastCheckout)"
+  },
+  {
+    "invoice_id": "INV-10029",
+    "client_id": "CL-1029",
+    "invoice_amount": 52000.0,
+    "predicted_status": "on_time",
+    "actual_status": "late",
+    "was_correct": false,
+    "risk_level": "low",
+    "settled_at": "2026-09-05T18:19:46.257190",
+    "days_since_sent": 32,
+    "payment_terms": 30,
+    "settled_channel": "Razorpay UPI (FastCheckout)"
   }
 ]
