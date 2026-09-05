@@ -39,9 +39,6 @@ export default function App() {
                     <span className="text-[#09090b]">when</span>
                     <span className="text-[#eab308]">tho</span>
                   </span>
-                  <span className="text-[10px] font-bold text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">
-                    Razorpay Track 3
-                  </span>
                 </div>
                 <span className="text-[10px] text-[#71717a] font-medium tracking-wide uppercase mt-0.5">
                   Invoice Intelligence

@@ -56,7 +56,7 @@ export default function RevenueRecoveryCard({ invoice, onPtpUpdated }) {
               <Sparkles className="w-3.5 h-3.5 text-blue-600" />
               AI Revenue Recovery Agent
             </span>
-            <span className="text-xs text-[#71717a] font-semibold">Track 3: Autonomous Receivables Win-Back</span>
+            <span className="text-xs text-[#71717a] font-semibold">Autonomous Receivables Win-Back</span>
           </div>
           <h2 className="text-xl font-extrabold tracking-tight text-[#09090b]">
             {recovery.strategy_name}
