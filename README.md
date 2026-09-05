@@ -1,6 +1,12 @@
 # WhenTho — Razorpay AI Invoicing & Cash Flow Intelligence
 > AI-powered invoice payment prediction, time-to-event survival curves, and automated Razorpay revenue recovery for freelancers and SMBs. Built for the **Razorpay AI Buildathon 2026**.
 
+[![Live Backend API](https://img.shields.io/badge/Render_API-Live%20Operational-00c58e?style=for-the-badge&logo=render)](https://whentho-2.onrender.com)
+[![API Docs](https://img.shields.io/badge/Swagger_Docs-Available-blue?style=for-the-badge&logo=fastapi)](https://whentho-2.onrender.com/docs)
+
+- **Live Production Backend:** [https://whentho-2.onrender.com](https://whentho-2.onrender.com)
+- **Interactive Swagger Docs:** [https://whentho-2.onrender.com/docs](https://whentho-2.onrender.com/docs)
+
 ---
 
 ## 💡 What WhenTho Does
@@ -131,6 +137,10 @@ Open **[http://localhost:5173](http://localhost:5173)** in your browser.
 
 WhenTho includes an automated Infrastructure-as-Code blueprint [`render.yaml`](file:///Users/somya/Desktop/WhenTho/render.yaml):
 
+- **Live Deployed API Service:** [https://whentho-2.onrender.com](https://whentho-2.onrender.com)
+- **Live Health Endpoint:** [https://whentho-2.onrender.com/](https://whentho-2.onrender.com/)
+- **Live Swagger Documentation:** [https://whentho-2.onrender.com/docs](https://whentho-2.onrender.com/docs)
+
 ### 1-Click Render Deployment:
 1. Go to your [Render Dashboard](https://dashboard.render.com).
 2. Click **New +** $\rightarrow$ **Web Service** (or **Blueprint**).
@@ -143,7 +153,7 @@ WhenTho includes an automated Infrastructure-as-Code blueprint [`render.yaml`](f
 5. Under **Environment Variables**, add:
    - `GEMINI_API_KEY`: *(your Google AI Studio API key)*
 6. Click **Deploy Web Service**.
-7. Copy your assigned Render service URL (e.g. `https://whentho-api.onrender.com`).
+7. Your service will be live at `https://whentho-2.onrender.com`.
 
 ---
 
@@ -160,7 +170,7 @@ WhenTho is configured for instantaneous 1-click deployment on **Vercel**:
    - **SPA Routing Rewrite:** Enabled (routes all paths to `/index.html`)
 3. Set the Environment Variable in Vercel Project Settings:
    ```env
-   VITE_API_URL=https://whentho-api.onrender.com
+   VITE_API_URL=https://whentho-2.onrender.com
    ```
 4. Click **Deploy**.
 
