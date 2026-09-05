@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" width="460" height="120" fill="none">
+  <!-- Icon container -->
+  <g transform="translate(16, 12)">
+    <rect width="96" height="96" rx="21.12" fill="#0f0f0f"/>
+    <!-- Left eye (circle) -->
+    <circle cx="36.5" cy="51.5" r="12" fill="#eab308"/>
+    <!-- Right eye (rotated ellipse, higher) -->
+    <ellipse cx="61.5" cy="42.5" rx="15" ry="9" transform="rotate(20 61.5 42.5)" fill="#eab308"/>
+  </g>
+
+  <!-- Wordmark: geometric sans-serif, letter-spacing 0.08em, 'when' in #f5f5f5, 'tho' in #eab308 -->
+  <text x="132" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Inter', 'DM Sans', sans-serif" font-size="44" font-weight="500" letter-spacing="0.08em">
+    <tspan fill="#f5f5f5">when</tspan><tspan fill="#eab308">tho</tspan>
+  </text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <!-- 22% border radius standard app icon container -->
+  <rect width="512" height="512" rx="112.64" fill="#0f0f0f"/>
+  <!-- Left eye: perfect circle, scaled down by 12% (radius 60) for pronounced raised eyebrow asymmetry -->
+  <circle cx="196" cy="268" r="60" fill="#eab308"/>
+  <!-- Right eye: wide ellipse rotated 20deg clockwise, positioned higher (cy: 226) -->
+  <ellipse cx="320" cy="226" rx="78" ry="46" transform="rotate(20 320 226)" fill="#eab308"/>
+</svg>
