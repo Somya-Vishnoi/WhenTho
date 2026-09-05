@@ -129,14 +129,26 @@ export default function InvoiceDetail({ invoiceId, onBack }) {
               )}
             </div>
 
-            <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-[#09090b]">
-              {invoice.client_name || invoice.client_id}
-            </h1>
-            <p className="text-xs text-[#71717a] flex items-center gap-2 font-medium">
-              <Building2 className="w-3.5 h-3.5" />
-              <span>Industry: {invoice.client_industry || "Creative"}</span>
+            <div className="flex items-baseline gap-2.5 flex-wrap">
+              <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-[#09090b]">
+                {invoice.client_name || invoice.client_id}
+              </h1>
+              {invoice.client_id && (
+                <span className="font-mono text-xs font-bold text-zinc-600 bg-zinc-100 px-2 py-0.5 rounded border border-zinc-200">
+                  Client ID: {invoice.client_id}
+                </span>
+              )}
+            </div>
+
+            <p className="text-xs text-[#71717a] flex items-center gap-2 font-medium flex-wrap">
+              <span className="flex items-center gap-1">
+                <Building2 className="w-3.5 h-3.5" />
+                Industry: {invoice.client_industry || "Creative"}
+              </span>
               <span>•</span>
-              <span>Billing Contact: <span className="font-mono text-blue-600">{invoice.client_email || "billing@client.com"}</span></span>
+              <span>Email: <span className="font-mono text-blue-600">{invoice.client_email || `billing@${(invoice.client_id || 'client').toLowerCase()}.com`}</span></span>
+              <span>•</span>
+              <span>Phone: <span className="font-mono font-semibold text-[#09090b]">{invoice.client_phone || `+91 98${Math.abs((invoice.client_id || '').split('').reduce((a,b)=>a+b.charCodeAt(0), 1000) % 90000000 + 10000000)}`}</span></span>
             </p>
           </div>
 

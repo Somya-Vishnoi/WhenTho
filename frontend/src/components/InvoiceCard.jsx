@@ -33,6 +33,11 @@ export default function InvoiceCard({ invoice, onSelect }) {
             <span className="font-mono text-xs font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
               {invoice_id}
             </span>
+            {client_id && (
+              <span className="font-mono text-[11px] font-semibold text-zinc-600 bg-zinc-100 px-1.5 py-0.5 rounded border border-zinc-200">
+                {client_id}
+              </span>
+            )}
             <span className="text-xs text-[#71717a] flex items-center gap-1">
               <Building2 className="w-3 h-3" />
               {client_industry || "Creative"}
