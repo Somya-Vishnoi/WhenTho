@@ -284,5 +284,31 @@
     "days_since_sent": 77,
     "payment_terms": 45,
     "settled_channel": "Razorpay UPI (FastCheckout)"
+  },
+  {
+    "invoice_id": "INV-10015",
+    "client_id": "CL-1017",
+    "invoice_amount": 50000.0,
+    "predicted_status": "on_time",
+    "actual_status": "on_time",
+    "was_correct": true,
+    "risk_level": "low",
+    "settled_at": "2026-09-05T17:46:51.521144",
+    "days_since_sent": 0,
+    "payment_terms": 30,
+    "settled_channel": "Razorpay UPI (FastCheckout)"
+  },
+  {
+    "invoice_id": "INV-10002",
+    "client_id": "CL-1001",
+    "invoice_amount": 150500.0,
+    "predicted_status": "very_late",
+    "actual_status": "very_late",
+    "was_correct": true,
+    "risk_level": "high",
+    "settled_at": "2026-09-05T17:48:10.370882",
+    "days_since_sent": 81,
+    "payment_terms": 45,
+    "settled_channel": "Razorpay UPI (FastCheckout)"
   }
 ]
