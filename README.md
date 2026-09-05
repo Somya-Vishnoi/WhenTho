@@ -1,10 +1,12 @@
 # WhenTho — Razorpay AI Invoicing & Cash Flow Intelligence
 > AI-powered invoice payment prediction, time-to-event survival curves, and automated Razorpay revenue recovery for freelancers and SMBs. Built for the **Razorpay AI Buildathon 2026**.
 
+[![Live App](https://img.shields.io/badge/Vercel_App-Live%20Frontend-000000?style=for-the-badge&logo=vercel)](https://whentho-tawny.vercel.app/)
 [![Live Backend API](https://img.shields.io/badge/Render_API-Live%20Operational-00c58e?style=for-the-badge&logo=render)](https://whentho-2.onrender.com)
 [![API Docs](https://img.shields.io/badge/Swagger_Docs-Available-blue?style=for-the-badge&logo=fastapi)](https://whentho-2.onrender.com/docs)
 
-- **Live Production Backend:** [https://whentho-2.onrender.com](https://whentho-2.onrender.com)
+- **Live Web Application (Vercel):** [https://whentho-tawny.vercel.app](https://whentho-tawny.vercel.app/)
+- **Live Production Backend (Render):** [https://whentho-2.onrender.com](https://whentho-2.onrender.com)
 - **Interactive Swagger Docs:** [https://whentho-2.onrender.com/docs](https://whentho-2.onrender.com/docs)
 
 ---
